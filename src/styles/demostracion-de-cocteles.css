@@ -1,0 +1,34 @@
+.demostracion-de-cocteles {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5px 0;
+}
+
+.container {
+    width: 100% !important;
+}
+
+.row {
+    margin: 10px 0 !important;
+}
+
+.carousel .carousel-item {
+    width: 400px !important;
+    height: 400px !important;
+}
+
+.carousel .indicators {
+    margin-bottom: 20px !important;
+}
+
+.carousel .indicators .indicator-item {
+    background-color: #fff !important;
+    border-radius: 0 !important;
+    transform: rotate(45deg);
+    margin: 24px 10px !important;
+}
+
+.carousel .indicators .indicator-item.active {
+    background: #000 !important;
+}

@@ -1,0 +1,80 @@
+#header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    background: #f7f7f7;
+    padding: 0 20px;
+    z-index: 100000;
+}
+
+#header h1 {
+    font-size: 40px;
+    margin: 20px;
+    cursor: pointer;
+}
+
+#header-content {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-bottom: -40px;
+}
+
+#header-search-by-name {
+    display: flex;
+    height: 40px;
+}
+
+#header-input {
+    outline: none;
+    border-radius: 10px 0 0 10px;
+    border: 0.5px solid #aaa;
+    padding: 5px;
+    font: 18px cursive;
+    height: 70%;
+    background: #fff;
+}
+
+#header-search-by-name button {
+    border-radius: 0 10px 10px 0;
+    border: 0.5px solid #aaa;
+    padding: 5px;
+    cursor: pointer;
+}
+
+h4 {
+    color: #666;
+}
+
+#search-by-char {
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    margin-bottom: 10px;
+    margin-top: -10px;
+}
+
+#search-by-char button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 2.5%;
+    height: auto;
+    font: 18px cursive;
+    background: #e5e5e5;
+    border-radius: 5px;
+    border: none;
+    transition: 0.2s;
+}
+
+#search-by-char button:active {
+    background: #eee;
+}
+
+#search-by-char button:hover {
+    transform: scale(1.2);
+}
