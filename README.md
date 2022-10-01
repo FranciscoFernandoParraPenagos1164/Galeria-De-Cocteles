@@ -1,6 +1,6 @@
 esta aplicacion es una practica de desarrollo front end en REACT
 
-para esta practica se consumira la API TheCocktailDB
+para esta practica se consumira la API TheCocktailDB(https://www.thecocktaildb.com/api.php)
 EndPoints
 
 Buscar cóctel por nombre

@@ -6,7 +6,7 @@
     top: 0;
     background: #f7f7f7;
     padding: 0 20px;
-    z-index: 100000;
+    z-index: 1000;
 }
 
 #header h1 {
@@ -44,6 +44,7 @@
     border: 0.5px solid #aaa;
     padding: 5px;
     cursor: pointer;
+    background: #ddd !important;
 }
 
 h4 {
