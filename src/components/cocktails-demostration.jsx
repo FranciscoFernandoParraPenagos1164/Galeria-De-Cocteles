@@ -8,27 +8,31 @@ function DemostracionCocteles() {
 
   const [coctel, setCoctel] = useState([]);
 
-  useEffect(() => {
+  const initCarousel = () => {
+    const carouselConfig = {
+      duration: 200,
+      dist: -70,
+      shift: -20,
+      padding: -15,
+      numVisible: 5,
+      indicators: true,
+    };
+    const elems = document.querySelectorAll('.carousel');
+    M.Carousel.init(elems, carouselConfig);
+    const instance = M.Carousel.getInstance(elems[0]);
+    const interval = setInterval(() => {
+      instance.next();
+    }, 5000);
+    document.querySelector('.carousel').addEventListener('click', () => {
+      clearInterval(interval);
+    });
+  };
 
+  useEffect(() => {
     Promise.all(getCocktails(''))
       .then(coctel => {
         setCoctel(coctel);
-        let elems = document.querySelectorAll('.carousel');
-        M.Carousel.init(elems, {
-          duration: 200,
-          dist: -70,
-          shift: -20,
-          padding: -15,
-          numVisible: 5,
-          indicators: true,
-        });
-        let instance = M.Carousel.getInstance(elems[0]);
-        let interval = setInterval(() => {
-          instance.next();
-        }, 5000);
-        document.querySelector('.carousel').addEventListener('click', () => {
-          clearInterval(interval);
-        });
+        initCarousel();
       });
   }, []);
 

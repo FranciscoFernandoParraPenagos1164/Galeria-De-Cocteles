@@ -38,7 +38,7 @@ function Header() {
       <h4>Buscar por letra</h4>
       <div id='search-by-char'>
         {
-          letters.split("").map(letra => <Link to={`/letter/${letra}`}><button key={letra} >{letra}</button></Link>)
+          letters.split("").map(letra => <Link to={`/letter/${letra}`} key={letra}><button>{letra}</button></Link>)
         }
       </div>
     </header>
