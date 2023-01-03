@@ -29,7 +29,7 @@ function Header() {
   return (
     <header id='header'>
       <div id='header-content'>
-        <Link to='/'><h1>GALERIA DE COCTELES</h1></Link>
+        <Link to='/'><h1>GALERIA DE COCTELS</h1></Link>
         <form id='header-search-by-name' onSubmit={openCocktail}>
           <input type="text" placeholder='Buscar por nombre' id='header-input' ref={elementRef} />
           <button><img src={lupa} alt="lupa" /></button>
